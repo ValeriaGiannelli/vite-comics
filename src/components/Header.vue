@@ -57,6 +57,7 @@
 .container{
     justify-content: space-between;
     padding: 20px 0;
+    min-height: 120px;
 
     .logo{
         max-width: 80px;
