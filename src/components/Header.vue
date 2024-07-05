@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div class="container_menu">
+    <div class="container">
         <!-- logo -->
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="Logo DC">
@@ -54,12 +54,8 @@
 </template>
 
 <style lang="scss" scoped>
-.container_menu{
-    display: flex;
+.container{
     justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
     padding: 20px;
 
     .logo{
@@ -71,6 +67,10 @@
         gap: 10px;
         font-size: 12px;
         list-style-type: none;
+
+        a{
+            color: black;
+        }
     }
 }
 
