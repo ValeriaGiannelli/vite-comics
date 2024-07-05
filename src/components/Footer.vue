@@ -1,6 +1,38 @@
 <script>
     export default{
         name: "Footer",
+        
+        data(){
+            return{
+                pages: [
+                    {
+                        title: "DIGITAL COMICS",
+                        path: "buy-comics-digital-comics.png",
+                    },
+                    {
+                        title: "DC MERCHANDISE",
+                        path: "buy-comics-merchandise.png",
+                    },
+                    {
+                        title: "SUBSCRIPTION",
+                        path: "buy-comics-subscriptions.png",
+                    },
+                    {
+                        title: "COMIC SHOP LOCATOR",
+                        path: "buy-comics-shop-locator.png",
+                    },
+                    {
+                        title: "DC POWER VISA",
+                        path: "buy-dc-power-visa.svg",
+                    },
+                ]
+            }
+        },
+        methods:{
+            getImagePath: function(imgPath){
+                return new URL(imgPath, import.meta.url).href;
+            }
+        }
     }
 
 </script>
@@ -13,55 +45,16 @@
 
             <div class="container">
 
-                <div class="single-element">
+                <div class="single-element" v-for="(page, index) in pages" :key="index">
                     <!-- icona del link -->
-                    <div class="img">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    <div class="imgagine">
+                        <img :src="getImagePath(`../assets/img/${page.path}`)" :alt="page.title">
                     </div>
 
                     <!-- link -->
-                    <a href="#">DIGITAL COMICS</a>
+                    <a href="#">{{page.title}}</a>
                 </div>
 
-                <div class="single-element">
-                    <!-- icona del link -->
-                    <div class="img">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-
-                    <!-- link -->
-                    <a href="#">DIGITAL COMICS</a>
-                </div>
-
-                <div class="single-element">
-                    <!-- icona del link -->
-                    <div class="img">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-
-                    <!-- link -->
-                    <a href="#">DIGITAL COMICS</a>
-                </div>
-
-                <div class="single-element">
-                    <!-- icona del link -->
-                    <div class="img">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-
-                    <!-- link -->
-                    <a href="#">DIGITAL COMICS</a>
-                </div>
-
-                <div class="single-element">
-                    <!-- icona del link -->
-                    <div class="img">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    </div>
-
-                    <!-- link -->
-                    <a href="#">DIGITAL COMICS</a>
-                </div>
                 
 
             </div>
@@ -256,8 +249,14 @@
        @include flex-center;
     }
 
-    .img{
+    .imgagine{
         width: 50px;
+        height: 50px;
+
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     a{

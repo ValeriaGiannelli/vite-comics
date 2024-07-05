@@ -105,7 +105,7 @@
 
         a{
             color: black;
-            height: 120px;
+            min-height: 120px;
             display: flex;
             align-items: center;
 
