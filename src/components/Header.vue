@@ -56,7 +56,7 @@
 <style lang="scss" scoped>
 .container{
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
 
     .logo{
         max-width: 80px;
