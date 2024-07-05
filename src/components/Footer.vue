@@ -7,6 +7,8 @@
 
 
 <template>
+
+        <!-- parte alta del merchandise -->
         <div class="up">
 
             <div class="container">
@@ -66,14 +68,140 @@
 
         </div>
 
+        <!-- link utili -->
         <div class="link-utili">
 
             <div class="container">
+
+                <!-- parte dei link -->
+                <div class="links">
+
+                    <!-- colonna -->
+                    <div class="col-link">
+                        <ul>
+                            <!-- titolo -->
+                            <li class="title">
+                                DC COMICS
+                            </li>
+                            
+                            <!-- link -->
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+
+                            <!-- titolo -->
+                            <li class="title">
+                                DC COMICS
+                            </li>
+
+                            <!-- link -->
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- colonna -->
+                    <div class="col-link">
+                        <ul>
+                            <!-- titolo -->
+                            <li class="title">
+                                DC COMICS
+                            </li>
+                            
+                            <!-- link -->
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- colonna -->
+                    <div class="col-link">
+                        <ul>
+                            <!-- titolo -->
+                            <li class="title">
+                                DC COMICS
+                            </li>
+                            
+                            <!-- link -->
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                            <li>
+                                <a href="#">Characters</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <!-- parte del logo -->
+                 <div class="log-bg">
+                    <img src="../assets/img/dc-logo-bg.png" alt="">
+                 </div>
 
             </div>
 
         </div>
 
+
+        <!-- sing-up e follow us -->
         <div class="down">
 
             <div class="container">
@@ -89,13 +217,12 @@
 <style lang="scss" scoped>
  @use '../styles/partials/mixins' as *;
 
+//  parte alta
     .up{
         background-color: blue;
         display: flex;
         align-items: center;
-
-        // debug
-        height: 150px;
+        min-height: 150px;
     }
 
     .container{
@@ -114,4 +241,47 @@
         color: white;
         padding-left: 10px;
     }
+
+// link utili
+    .link-utili{
+        background-image: url("../assets/img/footer-bg.jpg");
+
+        .container{
+            justify-content: space-between;
+        }
+
+        li{
+            padding: 3px 0;
+        }
+
+        a{
+            padding: 0;
+            color: gray;
+        }
+
+        // titolo della colonna dei link
+        .title{
+            color: white;
+            padding: 10px 0;
+        }
+    }
+    
+
+    .links{
+        display: flex;
+    }
+
+    .col-link{
+        min-width: 140px;
+    }
+
+// logo
+    .log-bg{
+        height: 400px;
+        img{
+            height: 100%;
+        }
+    }
+
+// sing-up e follow us
 </style>

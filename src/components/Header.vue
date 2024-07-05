@@ -66,7 +66,6 @@
         display: flex;
         gap: 10px;
         font-size: 12px;
-        list-style-type: none;
 
         a{
             color: black;
