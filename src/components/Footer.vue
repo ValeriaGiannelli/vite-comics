@@ -293,10 +293,11 @@
 
 <style lang="scss" scoped>
  @use '../styles/partials/mixins' as *;
+ @use '../styles/partials/variables' as *;
 
 //  parte alta
     .up{
-        background-color: #0f82f7;
+        background-color: $primary;
         display: flex;
         align-items: center;
         min-height: 150px;
@@ -328,7 +329,7 @@
 // link utili
     .link-utili{
         background-image: url("../assets/img/dc-logo-bg.png"), url("../assets/img/footer-bg.jpg");
-        background-size: 10% cover;
+        background-size: 30%, cover;
         background-position-x: 80%;
         background-position-y: center;
         background-repeat: no-repeat;
@@ -348,7 +349,7 @@
 
         // titolo della colonna dei link
         .title{
-            color: white;
+            color: $primary-text-color;
             padding: 10px 0;
         }
     }
@@ -384,8 +385,8 @@
                 color: white;
                 font-size: 20px;
                 padding: 15px;
-                border: 2px solid #0f82f7;
-                background-color: #2f2f2f;
+                border: 2px solid $primary;
+                background-color: $bg-footer-color;
             }
         }
     }
@@ -394,7 +395,7 @@
         @include flex-center;
 
         span{
-            color: #0f82f7;
+            color: $primary;
         }
 
         i{
