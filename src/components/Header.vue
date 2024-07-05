@@ -84,6 +84,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 .container{
     justify-content: space-between;
     min-height: 120px;
@@ -108,11 +110,11 @@
             min-height: 120px;
             display: flex;
             align-items: center;
-            border-bottom: 5px solid white;
+            border-bottom: 5px solid $primary-text-color;
 
             &.active{
             color: #0f82f7;
-            border-bottom-color: #0f82f7;
+            border-bottom-color: $primary;
 }
         }
     }
