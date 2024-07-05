@@ -193,7 +193,7 @@
 
                 <!-- parte del logo -->
                  <div class="log-bg">
-                    <img src="../assets/img/dc-logo-bg.png" alt="">
+                    <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
                  </div>
 
             </div>
@@ -267,7 +267,11 @@
 
 // link utili
     .link-utili{
-        background-image: url("../assets/img/footer-bg.jpg");
+        background-image: url("../assets/img/dc-logo-bg.png"), url("../assets/img/footer-bg.jpg");
+        background-size: 10% cover;
+        background-position-x: 80%;
+        background-position-y: center;
+        background-repeat: no-repeat;
 
         .container{
             justify-content: space-between;
