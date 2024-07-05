@@ -108,10 +108,11 @@
             min-height: 120px;
             display: flex;
             align-items: center;
+            border-bottom: 5px solid white;
 
             &.active{
             color: #0f82f7;
-            border-bottom: 5px solid #0f82f7;
+            border-bottom-color: #0f82f7;
 }
         }
     }
