@@ -4,6 +4,7 @@
         
         data(){
             return{
+                // PAGINE DI SHOP ECC
                 pages: [
                     {
                         title: "DIGITAL COMICS",
@@ -25,7 +26,120 @@
                         title: "DC POWER VISA",
                         path: "buy-dc-power-visa.svg",
                     },
-                ]
+                ],
+                
+                // link utili
+                dcComics: [
+                    {
+                        title: "Characters",
+                        url: "#",
+                    },
+                    {
+                        title: "Comics",
+                        url: "#",
+                    },
+                    {
+                        title: "Movies",
+                        url: "#",
+                    },
+                    {
+                        title: "TV",
+                        url: "#",
+                    },
+                    {
+                        title: "Games",
+                        url: "#",
+                    },
+                    {
+                        title: "Videos",
+                        url: "#",
+                    },
+                    {
+                        title: "News",
+                        url: "#",
+                    },
+                ],
+
+                shop: [
+                    {
+                        title: "Shop DC",
+                        url: "#",
+                    },
+                    {
+                        title: "Shop DC Collectibles",
+                        url: "#",
+                    },
+                ],
+
+                dc: [
+                    {
+                        title: "Terms Of Use",
+                        url: "#",
+                    },
+                    {
+                        title: "Privace policy(New)",
+                        url: "#",
+                    },
+                    {
+                        title: "Ad Choices",
+                        url: "#",
+                    },
+                    {
+                        title: "Advertising",
+                        url: "#",
+                    },
+                    {
+                        title: "Jobs",
+                        url: "#",
+                    },
+                    {
+                        title: "Supscriptions",
+                        url: "#",
+                    },
+                    {
+                        title: "Talent Workshop",
+                        url: "#",
+                    },
+                    {
+                        title: "CPSC Certificates",
+                        url: "#",
+                    },
+                    {
+                        title: "Ratings",
+                        url: "#",
+                    },
+                    {
+                        title: "Shop Help",
+                        url: "#",
+                    },
+                    {
+                        title: "Contact Us",
+                        url: "#",
+                    },
+                ],
+
+                sites: [
+                    {
+                        title: "DC",
+                        url: "#",
+                    },
+                    {
+                        title: "MAD Magazine",
+                        url: "#",
+                    },
+                    {
+                        title: "DC Kids",
+                        url: "#",
+                    },
+                    {
+                        title: "DC Universe",
+                        url: "#",
+                    },
+                    {
+                        title: "DC Power Visa",
+                        url: "#",
+                    },
+                ],
             }
         },
         methods:{
@@ -78,40 +192,21 @@
                             </li>
                             
                             <!-- link -->
-                            <li>
-                                <a href="#">Characters</a>
+                            <li v-for="(link, index) in dcComics" :ket="index">
+                                <a :href="link.url">{{link.title}}</a>
                             </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
+
 
                             <!-- titolo -->
                             <li class="title">
-                                DC COMICS
+                               SHOP
                             </li>
 
                             <!-- link -->
-                            <li>
-                                <a href="#">Characters</a>
+                            <li v-for="(link, index) in shop" :ket="index">
+                                <a :href="link.url">{{link.title}}</a>
                             </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
+
                         </ul>
                     </div>
 
@@ -120,31 +215,14 @@
                         <ul>
                             <!-- titolo -->
                             <li class="title">
-                                DC COMICS
+                                DC
                             </li>
                             
                             <!-- link -->
-                            <li>
-                                <a href="#">Characters</a>
+                            <li v-for="(link, index) in dc" :ket="index">
+                                <a :href="link.url">{{link.title}}</a>
                             </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
+
                         </ul>
                     </div>
 
@@ -153,31 +231,14 @@
                         <ul>
                             <!-- titolo -->
                             <li class="title">
-                                DC COMICS
+                                SITES
                             </li>
                             
                             <!-- link -->
-                            <li>
-                                <a href="#">Characters</a>
+                            <li v-for="(link, index) in sites" :ket="index">
+                                <a :href="link.url">{{link.title}}</a>
                             </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
-                            <li>
-                                <a href="#">Characters</a>
-                            </li>
+                            
                         </ul>
                     </div>
 
@@ -299,6 +360,7 @@
 
     .col-link{
         min-width: 140px;
+        padding-right:30px;
     }
 
 // logo
