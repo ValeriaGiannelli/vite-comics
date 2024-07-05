@@ -20,6 +20,46 @@
                     <!-- link -->
                     <a href="#">DIGITAL COMICS</a>
                 </div>
+
+                <div class="single-element">
+                    <!-- icona del link -->
+                    <div class="img">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    </div>
+
+                    <!-- link -->
+                    <a href="#">DIGITAL COMICS</a>
+                </div>
+
+                <div class="single-element">
+                    <!-- icona del link -->
+                    <div class="img">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    </div>
+
+                    <!-- link -->
+                    <a href="#">DIGITAL COMICS</a>
+                </div>
+
+                <div class="single-element">
+                    <!-- icona del link -->
+                    <div class="img">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    </div>
+
+                    <!-- link -->
+                    <a href="#">DIGITAL COMICS</a>
+                </div>
+
+                <div class="single-element">
+                    <!-- icona del link -->
+                    <div class="img">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                    </div>
+
+                    <!-- link -->
+                    <a href="#">DIGITAL COMICS</a>
+                </div>
                 
 
             </div>
@@ -58,6 +98,10 @@
         height: 150px;
     }
 
+    .container{
+        justify-content: space-around
+    }
+
     .single-element{
        @include flex-center;
     }
@@ -68,5 +112,6 @@
 
     a{
         color: white;
+        padding-left: 10px;
     }
 </style>
