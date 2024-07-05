@@ -206,6 +206,29 @@
 
             <div class="container">
 
+                <button>SING-UP NOW!</button>
+
+                <div class="follow">
+                    <span>FOLLOW US</span>
+                    <a href="#">
+                        <img src="../assets/img/footer-facebook.png" alt="icona facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-twitter.png" alt="icona facebook">
+                        
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-youtube.png" alt="icona facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-pinterest.png" alt="icona facebook">
+                    </a>
+                    <a href="#">
+                        
+                        <img src="../assets/img/footer-periscope.png" alt="icona facebook">
+                    </a>
+                </div>
+
             </div>
 
         </div>
@@ -219,7 +242,7 @@
 
 //  parte alta
     .up{
-        background-color: blue;
+        background-color: #0f82f7;
         display: flex;
         align-items: center;
         min-height: 150px;
@@ -284,4 +307,33 @@
     }
 
 // sing-up e follow us
+    .down{
+        background-color: #2f2f2f;
+        min-height: 150px;
+        @include flex-center;
+        
+        .container{
+            justify-content: space-between;
+
+            button{
+                color: white;
+                font-size: 20px;
+                padding: 15px;
+                border: 2px solid #0f82f7;
+                background-color: #2f2f2f;
+            }
+        }
+    }
+
+    .follow{
+        @include flex-center;
+
+        span{
+            color: #0f82f7;
+        }
+
+        i{
+            color: #787878;
+        }
+    }
 </style>
