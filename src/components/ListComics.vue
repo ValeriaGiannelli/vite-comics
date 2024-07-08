@@ -42,6 +42,7 @@ export default{
 
     h5{
         margin-top: 20px;
+        text-transform: uppercase;
     }
     
 }
