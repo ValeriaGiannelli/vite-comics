@@ -19,7 +19,7 @@
 <style lang="scss" scoped>
     .contenuti{
         background-color: black;
-        height: calc(100vh - 820px);
+        height: 100px;
         display: flex;
         align-items: center;
     }
