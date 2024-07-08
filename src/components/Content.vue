@@ -90,6 +90,16 @@ import ListComics from './ListComics.vue';
 
 
 <template>
+    <!-- sezione del jumbutron -->
+    <div class="jumbutron">
+        <img src="../assets/img/jumbotron.jpg" alt="">
+
+        <div class="info container">
+            <h3>CURRENT SERIES</h3>
+        </div>
+        
+    </div>
+
     <section class="contenuti">
         <!-- contenitore all'80% -->
         <div class="container">
@@ -108,6 +118,26 @@ import ListComics from './ListComics.vue';
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+    .jumbutron{
+        height: 400px;
+        position: relative;
+
+        img{
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .info h3{
+            color: $primary-text-color;
+            padding: 10px 20px;
+            background-color: $primary;
+            position: absolute;
+        }
+    }
+
+
     .contenuti{
         background-color: #1c1c1c;
         display: flex;
@@ -123,6 +153,7 @@ import ListComics from './ListComics.vue';
 
     .more{
         justify-content: center;
+        // caratteristiche del bottone
         button{
             background: $primary;
             padding: 10px 50px;
