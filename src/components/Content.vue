@@ -91,8 +91,10 @@ import ListComics from './ListComics.vue';
 
 <template>
     <section class="contenuti">
+        <!-- contenitore all'80% -->
         <div class="container">
-            <ListComics/>
+            <!-- singola card che si dovrà ripetere per il mio array di elementi -->
+            <ListComics v-for="(comic, index) in comics" :key="index" :singleComic="comic"/>
         </div>
     </section>
 
@@ -115,7 +117,7 @@ import ListComics from './ListComics.vue';
         // aggiunto un wrap alla condizione iniziale
         .container{
             flex-wrap: wrap;
-            gap:50px 30px;
+            gap:30px;
         }
     }
 

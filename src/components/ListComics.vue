@@ -1,6 +1,9 @@
 <script>
 export default{
     name: "ListComics",
+    props:{
+        singleComic: Object,
+    }
 }
 
 </script>
@@ -11,90 +14,25 @@ export default{
     <div class="card">
         <!-- immagine che andrà gestita con props -->
         <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+            <img :src="singleComic.thumb" :alt="singleComic.series">
         </div>
         <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
-    </div>
-
-    <!-- card con immagine fumetto e titolo -->
-    <div class="card">
-        <!-- immagine che andrà gestita con props -->
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
-        </div>
-        <!-- titolo del fumetto gestito con props -->
-        <h5>ACTION COMICS</h5>
+        <h5>{{singleComic.series}}</h5>
     </div>
 
 </template>
 
 <style lang="scss" scoped>
+// dimensioni totali card
 .card{
+    width: 200px;
+    height: 250px;
+
+    // dimensioni per il contenitore dell'immagine
     div{
         height: 200px;
-        width: 200px;
 
+        // caratteristiche dell'immagine
         img{
         height: 100%;
         object-fit: cover;
